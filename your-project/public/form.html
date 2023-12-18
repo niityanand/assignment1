@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./form.css">
+  <title>Yoga Class Admission Form</title>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Yoga Class Admission Form</h2>
+    <form id="admissionForm">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required min="18" max="65">
+
+      <label for="batch">Choose Batch:</label>
+      <select id="batch" name="batch" required>
+        <option value="6-7AM">6-7AM</option>
+        <option value="7-8AM">7-8AM</option>
+        <option value="8-9AM">8-9AM</option>
+        <option value="5-6PM">5-6PM</option>
+      </select>
+
+      <button type="button" onclick="submitForm()">Enroll Now</button>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="../server/server.js"></script>
+
+</body>
+</html>
